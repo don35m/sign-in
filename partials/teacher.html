@@ -1,7 +1,7 @@
 <div class = "row">
   <div class = "col-md-12">
     <button  ui-sref = "home" class = "btn btn-success">Home</button>
-    <button  ui-sref = "sign-in" class = "btn btn-success">Students</button>
+    <button  ui-sref = "students" class = "btn btn-success">Students</button>
   </div>
 </div>
 
@@ -12,6 +12,7 @@
       <div ng-repeat = "item in students | filter:{signedIn: true}">
         <li>{{ item.name }}</li>
       </div>
+      
     </ul>
     <h2>Not in Class</h2>
     <ul>
