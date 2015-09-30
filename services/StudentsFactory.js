@@ -8,9 +8,9 @@ signIn.factory('StudentsFactory', function StudentsFactory() {
     { name: "Paul Jones", signedIn: false },
   ];
 
-  factory.addStudent = function() {
-    factory.students.push({ name: factory.studentName, signedIn: false });
-    factory.studentName = null;
+  factory.signInOut = function(student, value) {
+    console.log(student);
+    student.signedIn = value;
   };
 
   return factory;
