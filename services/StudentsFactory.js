@@ -6,12 +6,11 @@ signIn.factory('StudentsFactory', function StudentsFactory() {
     { name: "Mike Scott", signedIn: false },
     { name: "Ann Johnson", signedIn: false },
     { name: "Paul Jones", signedIn: false },
+    { name: "Ozzy Osbourne", signedIn: true },
+    { name: "James Hetfield", signedIn: false },
+    { name: "Dimebag Darrell", signedIn: false },
+    { name: "Phil Anselmo", signedIn: false },
   ];
-
-  factory.signInOut = function(student, value) {
-    console.log(student);
-    student.signedIn = value;
-  };
 
   return factory;
 });
