@@ -7,12 +7,13 @@
 
 <div class = "row">
   <div class = "col-md-6">
+    <div ng-show="students.length">
     <h2>You are Here</h2>
     <ul>
       <div ng-repeat = "item in students | filter:{signedIn: true}">
         <li>{{ item.name }}</li>
       </div>
-      
+
     </ul>
     <h2>Not in Class</h2>
     <ul>
@@ -20,6 +21,7 @@
         <li>{{ item.name }}</li>
       </div>
     </ul>
+    </div>
   </div>
 
 </div>
