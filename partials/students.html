@@ -11,7 +11,7 @@
     <div ng-repeat = "item in students">
       <p>{{ item.name }}
         <button  ng-click = "StudentsFactory.signInOut(item, true)" ng-show = "!item-signedIn" class = "btn btn-success">Sign In</button>
-        <button  ng-click = "StudentsFactory.signInOut(item, false)" ng-show = "!item-signedIn" class = "btn btn-success">Sign Out</button>
+        <button  ng-click = "StudentsFactory.signInOut(item, false)" ng-show = "item-signedIn" class = "btn btn-success">Sign Out</button>
 
       </p>
   </div>
